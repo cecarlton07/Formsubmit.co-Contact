@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+</head>
+<title>background</title>
+<title> IMAGE </title>
+<img class="img-banner" src="img/banner photo.png">
+<title>Menu</title>
+<head>
+    <body>
+        <div class="menu-bar">
+            <style> a {color: white;; text-decoration: none; font-size: 30px;} </style>
+            <ul>
+                <a href="index.html"> <li>Home</li> </a>
+                <a href="About.html"> <li style="text-decoration: none;"> About Me</li> </a>
+                <a href="personal training.html"> <li>Personal Training</li> </a>
+                <a href="meal plans.html"> <li>Meal Plans</li> </a>
+                <a href="training programs.html"> <li>Training Programs</li> </a>
+                <a href="contact.html"><li>Contact</li></a>
+            </ul>
+        </div>
+    </body>
+</head>
+<head>
+<head><title></title>
+    <meta name="viewpoint" content="width=device-width, intial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<br><br><br><br>
+<head>
+    <title>Contact Me</title>
+    <style>
+        /* Styling for the contact box */
+        .contact-box {
+            width: 75%;
+            padding: 20px;
+            border: 5px solid #d4af37;
+            border-radius: 50px;
+            background-color: black;
+            margin: 0 auto;
+            color: white;
+        }
+
+        /* Styling for the form elements */
+        .contact-box label,
+        .contact-box input,
+        .contact-box textarea {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        /* Styling for the submit button */
+        .contact-box button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Styling for the success message */
+        .success-message {
+            color: green;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        /* Styling for the error message */
+        .error-message {
+            color: red;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-box">
+        <h2 style="font-size: 40px; text-align: center;">Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="success-message" class="success-message"></div>
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script>
+        // JavaScript to handle form submission
+        document.getElementById("contact-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Perform validation (you can add more validation here)
+            if (!name || !email || !message) {
+                document.getElementById("error-message").textContent = "Please fill in all fields.";
+                return;
+            }
+
+            // Clear any previous error messages
+            document.getElementById("error-message").textContent = "";
+
+            // Simulate form submission (you can replace this with your own server-side code)
+            <form action="https://formsubmit.co/cameron@workemfitness.com" method="POST">
+                <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+            // Here, we'll just display a success message
+            setTimeout(function () {
+                document.getElementById("success-message").textContent = "Message sent successfully!";
+            }, 1000);
+        });
+    </script>
+</body>
+<br><br>
+<p class="copyright"> &copy; 2023 Workem Fitness </p>
+</html>
